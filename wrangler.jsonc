@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "glados-daily-checkin",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-19",
+  "triggers": { "crons": ["17 1 * * *"] }
+}
