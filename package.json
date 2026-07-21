@@ -1,0 +1,18 @@
+{
+  "name": "glados-daily-checkin-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "test": "node --test test.mjs"
+  },
+  "devDependencies": { "wrangler": "^4.92.0" },
+  "cloudflare": {
+    "bindings": {
+      "GLADOS_COOKIE": { "description": "GLaDOS 登录后的完整 Cookie（必填）" },
+      "SERVERCHAN_SENDKEY": { "description": "Server酱 SendKey，用于微信通知（可选）" }
+    }
+  }
+}
